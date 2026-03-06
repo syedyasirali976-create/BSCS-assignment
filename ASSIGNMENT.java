@@ -18,7 +18,6 @@ import java.util.Scanner;
             }
         }
 
-        // Sum of each row
         System.out.println("\nSum of each row:");
         for (int i = 0; i < y; i++) {
             int rowSum = 0;
@@ -60,5 +59,6 @@ import java.util.Scanner;
     }
 }
     
+
 
 
