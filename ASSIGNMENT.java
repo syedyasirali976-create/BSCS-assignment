@@ -4,18 +4,16 @@ import java.util.Scanner;
          public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-
-        // Ask user for dimension of square matrix
+          
         System.out.print("Enter size of square matrix: ");
         int y = input.nextInt();
 
         int[][] matrix = new int[y][y];
-
-        // Taking input for matrix elements
+          
         System.out.println("Enter matrix elements:");
 
-        for (int i = 0; i < y; i++) {           // loop for rows
-            for (int j = 0; j < y ; j++) {       // loop for columns
+        for (int i = 0; i < y; i++) {           
+            for (int j = 0; j < y ; j++) {
                 matrix[i][j] = input.nextInt();
             }
         }
@@ -32,7 +30,6 @@ import java.util.Scanner;
             System.out.println("Row " + (i + 1) + " sum = " + rowSum);
         }
 
-        // Sum of each column
         System.out.println("\nSum of each column:");
         for (int j = 0; j < y; j++) {
             int colSum = 0;
@@ -44,16 +41,14 @@ import java.util.Scanner;
             System.out.println("Column " + (j + 1) + " sum = " + colSum);
         }
 
-        // Sum of main diagonal elements
         int diagonalSum = 0;
 
         for (int i = 0; i < y; i++) {
             diagonalSum = diagonalSum + matrix[i][i];
         }
 
-        System.out.println("\nSum of diagonal elements = " + diagonalSum);
-
-        // Sum of reverse diagonal elements
+        
+          System.out.println("\nSum of diagonal elements = " + diagonalSum);
         int reverseDiagonalSum = 0;
 
         for (int i = 0; i < y; i++) {
@@ -62,8 +57,8 @@ import java.util.Scanner;
 
         System.out.println("Sum of reverse diagonal elements = " + reverseDiagonalSum);
 
-       // input.close();
     }
 }
     
+
 
